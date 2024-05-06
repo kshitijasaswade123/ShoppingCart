@@ -7,14 +7,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 const ShoppingRoute = require('./Route/ShoppingRoute');
+const PORT = process.env.port;
 
-
-app.get('/',(req, res) => {
+app.get('/', (req, res) => {
   res.send("hellloo");
 });
 
-app.listen(process.env.port);
-app.use('/api/shopping',ShoppingRoute);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+app.use('/api/shopping', ShoppingRoute);
 
 async function dbconnection() {
   try {
