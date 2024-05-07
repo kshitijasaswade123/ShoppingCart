@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 const ShoppingRoute = require('./Route/ShoppingRoute');
-const PORT = process.env.port;
+const PORT = process.env.port || 5000;
 
 app.get('/', (req, res) => {
   res.send("hellloo");
