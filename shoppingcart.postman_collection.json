@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "d1f288cf-f163-458a-8aa7-4a21df8f1830",
+		"name": "shoppingcart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32248950"
+	},
+	"item": [
+		{
+			"name": "https://shoppingcart-nciw.onrender.com/api/shopping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shoppingcart-nciw.onrender.com/api/shopping",
+					"protocol": "https",
+					"host": [
+						"shoppingcart-nciw",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"shopping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shoppingcart-nciw.onrender.com/api/shopping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"Smart Watch\",\r\n            \"price\": 5999,\r\n            \"cover\": \"https://cdn.pixabay.com/photo/2015/08/15/15/21/smart-watch-889639_1280.jpg\",\r\n            \"description\": \"copany:sonata,detailes:black color,warranty:3year\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shoppingcart-nciw.onrender.com/api/shopping",
+					"protocol": "https",
+					"host": [
+						"shoppingcart-nciw",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"shopping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shoppingcart-nciw.onrender.com/api/shopping/66478222c89bcaed1e6caf17",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"Smart Watch\",\r\n            \"price\": 5499,\r\n            \"cover\": \"https://cdn.pixabay.com/photo/2015/08/15/15/21/smart-watch-889639_1280.jpg\",\r\n            \"description\": \"copany:sonata,detailes:black color,warranty:3year\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shoppingcart-nciw.onrender.com/api/shopping/66478222c89bcaed1e6caf17",
+					"protocol": "https",
+					"host": [
+						"shoppingcart-nciw",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"shopping",
+						"66478222c89bcaed1e6caf17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shoppingcart-nciw.onrender.com/api/shopping/66478222c89bcaed1e6caf17",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shoppingcart-nciw.onrender.com/api/shopping/66478222c89bcaed1e6caf17",
+					"protocol": "https",
+					"host": [
+						"shoppingcart-nciw",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"shopping",
+						"66478222c89bcaed1e6caf17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
