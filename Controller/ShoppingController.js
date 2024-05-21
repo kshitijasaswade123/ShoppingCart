@@ -49,7 +49,7 @@ exports.putData = async(req,res)=>{
 
 exports.deletData = async(req,res)=>{
     try {
-        const data = await ShoppingModel.findByIdAndDelete(req.param.id);
+        const data = await ShoppingModel.findByIdAndDelete(req.params.id);
         return res.json({
             errors:false,
             data:data
